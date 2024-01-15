@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Product } from "@/types/product";
+import { Student } from "@/types/studentData";
 
-const productData: Product[] = [
+const studentData: Student[] = [
   {
     image:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -58,7 +58,7 @@ const TableTwo = () => {
         </div>
       </div>
 
-      {productData.map((product, key) => (
+      {studentData.map((student, key) => (
         <div
           className="grid grid-cols-6 border-t border-stroke py-4.5 px-4 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5"
           key={key}
@@ -67,26 +67,26 @@ const TableTwo = () => {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
               <div className="h-12.5 w-15 rounded-md">
                 <Image
-                  src={product.image}
+                  src={student.image}
                   width={60}
                   height={50}
                   alt="person"
                 />
               </div>
               <p className="text-sm text-black dark:text-white">
-                {product.name}
+                {student.name}
               </p>
             </div>
           </div>
 
           <div className="col-span-1 flex items-center">
             <p className="text-sm text-black dark:text-white">
-              {product.marks}
+              {student.marks}
             </p>
           </div>
 
           <div className="col-span-1 flex items-center">
-            <p className="text-sm text-meta-3">{product.percentage}%</p>
+            <p className="text-sm text-meta-3">{student.percentage}%</p>
           </div>
         </div>
       ))}
