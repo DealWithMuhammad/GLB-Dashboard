@@ -11,9 +11,7 @@ export default function AppLogo() {
           src={"/images/logo/logo-icon.svg"}
           alt="Logo"
         />
-        <h2 className="text-white text-3xl md:text-4xl ml-3 font-bold">
-          Glbridge
-        </h2>
+        <h2 className=" text-3xl md:text-4xl ml-3 font-bold">Glbridge</h2>
       </Link>
     </>
   );
