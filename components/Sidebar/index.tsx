@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import SidebarLinkGroup from "./SidebarLinkGroup";
 import Image from "next/image";
+import AppLogo from "../AppLogo";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -64,24 +65,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
     >
       {/* <!-- SIDEBAR HEADER --> */}
       <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
-        <Link className="flex" href="/">
-          {/* <Image
-            width={176}
-            height={32}
-            src={"/images/logo/logo.svg"}
-            alt="Logo"
-          /> */}
-
-          <Image
-            width={32}
-            height={32}
-            src={"/images/logo/logo-icon.svg"}
-            alt="Logo"
-          />
-          <h2 className="text-white text-3xl md:text-4xl ml-3 font-bold">
-            Glbridge
-          </h2>
-        </Link>
+        <AppLogo />
 
         <button
           ref={trigger}
