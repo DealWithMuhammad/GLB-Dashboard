@@ -4,6 +4,8 @@ import { usePathname } from "next/navigation";
 import SidebarLinkGroup from "./SidebarLinkGroup";
 import Image from "next/image";
 import AppLogo from "../AppLogo";
+import { RiInboxUnarchiveLine } from "react-icons/ri";
+import { CiInboxIn } from "react-icons/ci";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -167,6 +169,22 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                 </Link>
               </li>
               {/* <!-- Menu Item Calendar --> */}
+
+              {/* Menu Item Inbox */}
+              <li>
+                <Link
+                  href="/inbox"
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
+                    pathname.includes("calendar") &&
+                    "bg-graydark dark:bg-meta-4"
+                  }`}
+                >
+                  <CiInboxIn className="text-2xl" />
+                  Inbox
+                </Link>
+              </li>
+
+              {/* Menu Item Inbox End */}
 
               {/* <!-- Menu Item Profile --> */}
               <li>

@@ -31,7 +31,9 @@ const Dashboard: React.FC = () => {
         <ChartOne />
         <ChartTwo />
       </div>
-      <TableTwo />
+      <div className="col-span-12 xl:col-span-8">
+        <TableTwo />
+      </div>
     </>
   );
 };
