@@ -1,29 +1,29 @@
-import { Package } from "@/types/package";
+import { Inbox } from "@/types/Inbox";
 
-const packageData: Package[] = [
+const packageData: Inbox[] = [
   {
-    name: "Free package",
-    price: 0.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Paid",
+    name: "Ahmad",
+    email: "demo@gmail.com",
+    inboxDate: `Jan 13,2023`,
+    grade: "Grade 7",
   },
   {
-    name: "Standard Package",
-    price: 59.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Paid",
+    name: "Muhammad",
+    email: "demo2@gmail.com",
+    inboxDate: `Sep 13,2023`,
+    grade: "Grade 8",
   },
   {
-    name: "Business Package",
-    price: 99.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Unpaid",
+    name: "Raheel",
+    email: "demo3@gmail.com",
+    inboxDate: `Oct 13,2023`,
+    grade: "Grade 9",
   },
   {
-    name: "Standard Package",
-    price: 59.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Pending",
+    name: "Ali",
+    email: "demo4@gmail.com",
+    inboxDate: `April 13,2023`,
+    grade: "Grade 10",
   },
 ];
 
@@ -35,13 +35,13 @@ const TableThree = () => {
           <thead>
             <tr className="bg-gray-2 text-left dark:bg-meta-4">
               <th className="min-w-[220px] py-4 px-4 font-medium text-black dark:text-white xl:pl-11">
-                Package
+                Student Name
               </th>
               <th className="min-w-[150px] py-4 px-4 font-medium text-black dark:text-white">
-                Invoice date
+                Date
               </th>
               <th className="min-w-[120px] py-4 px-4 font-medium text-black dark:text-white">
-                Status
+                Grade
               </th>
               <th className="py-4 px-4 font-medium text-black dark:text-white">
                 Actions
@@ -55,25 +55,15 @@ const TableThree = () => {
                   <h5 className="font-medium text-black dark:text-white">
                     {packageItem.name}
                   </h5>
-                  <p className="text-sm">${packageItem.price}</p>
+                  <p className="text-sm">{packageItem.email}</p>
                 </td>
                 <td className="border-b border-[#eee] py-5 px-4 dark:border-strokedark">
                   <p className="text-black dark:text-white">
-                    {packageItem.invoiceDate}
+                    {packageItem.inboxDate}
                   </p>
                 </td>
                 <td className="border-b border-[#eee] py-5 px-4 dark:border-strokedark">
-                  <p
-                    className={`inline-flex rounded-full bg-opacity-10 py-1 px-3 text-sm font-medium ${
-                      packageItem.status === "Paid"
-                        ? "text-success bg-success"
-                        : packageItem.status === "Unpaid"
-                        ? "text-danger bg-danger"
-                        : "text-warning bg-warning"
-                    }`}
-                  >
-                    {packageItem.status}
-                  </p>
+                  <p>{packageItem.grade}</p>
                 </td>
                 <td className="border-b border-[#eee] py-5 px-4 dark:border-strokedark">
                   <div className="flex items-center space-x-3.5">
