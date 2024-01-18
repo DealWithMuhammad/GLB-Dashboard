@@ -12,6 +12,7 @@ const Profile = () => {
   return (
     <>
       <Breadcrumb pageName="Profile" />
+      <div>Profile of person</div>
     </>
   );
 };
