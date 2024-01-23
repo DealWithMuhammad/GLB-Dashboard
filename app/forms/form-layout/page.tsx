@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const FormLayout = () => {
   return (
     <>
-      <Breadcrumb pageName="FormLayout" />
+      <Breadcrumb pageName="Add New Student" />
       <AddStudent />
     </>
   );
