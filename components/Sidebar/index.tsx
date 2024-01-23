@@ -268,7 +268,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                             fill="white"
                           />
                         </svg>
-                        Forms
+                        Student Management
+                        {/* Forms */}
                         <svg
                           className={`absolute right-4 top-1/2 -translate-y-1/2 fill-current ${
                             open && "rotate-180"
@@ -302,7 +303,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                                 "text-white"
                               }`}
                             >
-                              Form Elements
+                              All Students
+                              {/* Form Elements */}
                             </Link>
                           </li>
                           <li>
@@ -313,7 +315,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                                 "text-white"
                               }`}
                             >
-                              Form Layout
+                              Add New Student
                             </Link>
                           </li>
                         </ul>
@@ -652,7 +654,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                               Sign In
                             </Link>
                           </li>
-                          {/* <li>
+                          <li>
                             <Link
                               href="/auth/signup"
                               className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
@@ -661,7 +663,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                             >
                               Sign Up
                             </Link>
-                          </li> */}
+                          </li>
                         </ul>
                       </div>
                       {/* <!-- Dropdown Menu End --> */}
