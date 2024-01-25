@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.4",
@@ -24,7 +25,7 @@
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
     "firebase": "^10.7.2",
-    "framer-motion": "^10.18.0",
+    "framer-motion": "^11.0.3",
     "jsvectormap": "^1.5.3",
     "next": "13.4.12",
     "postcss": "8.4.27",
