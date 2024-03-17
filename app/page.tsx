@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "GLB | Dashboard",
-  description: "This is Home page of School Portal",
+  description: "Home page of School Portal",
   // other metadata
 };
 
